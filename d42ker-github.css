@@ -6,7 +6,7 @@
   --item-hover-bg-color: #404040;
   --text-color: #c0c0c0;
   --bg-color: #121212;
-  --select-text-bg-color: #424242 !important;
+  --select-text-bg-color: #663f3f !important;
   --monospace: "Fira Code" !important;
   --window-border: 1px solid #404040;
   --rawblock-edit-panel-bd: #212121;
@@ -54,8 +54,15 @@ input {
 }
 
 a {
-  color: #c44141;
+  color: #d86666;
 }
+
+.md-comment {
+  color: var(--text-color);
+  opacity: .5;
+  font-family: var(--monospace);
+}
+
 h1,
 h2,
 h3,
@@ -166,7 +173,7 @@ ol:last-child {
   margin-bottom: 0;
 }
 blockquote {
-  border-left: 4px solid #212121;
+  border-left: 4px solid #aaaaaa80;
   padding: 0 15px;
   color: #aaa;
 }
@@ -427,7 +434,7 @@ footer {
   border-right: 1px solid #484848;
 }
 .CodeMirror-linenumber {
-  color: #484848;
+  color: #808080;
 }
 .cm-s-inner .cm-keyword {
   color: rgb(189, 97, 201);
@@ -548,4 +555,12 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 .CodeMirror div.CodeMirror-cursor {
   border-left: 3px solid #e4629a;
+}
+#typora-source .CodeMirror-gutter-wrapper {
+  font-family: var(--monospace) !important;
+}
+.cm-s-typora-default .CodeMirror-activeline-background {
+  left: -99999px;
+  right: -99999px;
+  background: #80808020;
 }
