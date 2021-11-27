@@ -554,3 +554,6 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   color: rgb(199, 199, 199);
   background-color: #900;
 }
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 3px solid #e4629a;
+}
