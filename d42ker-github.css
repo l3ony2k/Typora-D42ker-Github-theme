@@ -134,6 +134,7 @@ ol,
 dl,
 table {
   margin: 0.8em 0;
+  text-align: justify;
 }
 li > ol,
 li > ul {
@@ -221,17 +222,11 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-  border: 1px solid #212121;
-  background-color: #212121;
+  border: 1px solid #424242;
+  background-color: #424242;
   border-radius: 3px;
-  padding: 0;
-  padding: 2px 4px 0px 4px;
+  padding: 2px 4px 1px 4px;
   font-size: 0.9em;
-}
-
-code {
-  background-color: #212121;
-  padding: 0 4px 2px 4px;
 }
 
 .md-fences {
@@ -261,7 +256,6 @@ code {
 
 .md-fences {
   background-color: #212121;
-  /* color: aaa; */
 }
 #write pre.md-meta-block {
   padding: 1rem;
@@ -299,7 +293,6 @@ code {
   top: 0.285714286rem;
 }
 .md-image > .md-meta {
-  /*border: 1px solid #ddd;*/
   border-radius: 3px;
   padding: 2px 0px 0px 4px;
   font-size: 0.9em;
@@ -377,7 +370,7 @@ footer.ty-footer {
   border-color: #aaaaaa80 !important;
 }
 
-/** focus mode */
+/* focus mode */
 .on-focus-mode blockquote {
   border-left-color: rgba(85, 85, 85, 0.12);
 }
@@ -391,7 +384,6 @@ footer {
 
 .megamenu-content {
   background: #242424 !important;
-  /* background: linear-gradient(to bottom, #24292e00, #24292e), url(cubes.png); */
 }
 
 .megamenu-opened header {
