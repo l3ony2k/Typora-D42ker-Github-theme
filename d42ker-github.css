@@ -16,6 +16,10 @@
   background: #80808080 !important;
 }
 
+.menu-item-container a.menu-style-btn {
+  background: #424242;
+}
+
 html {
   font-size: 16px;
 }
@@ -59,7 +63,7 @@ a {
 
 .md-comment {
   color: var(--text-color);
-  opacity: .5;
+  opacity: 0.5;
   font-family: var(--monospace);
 }
 
