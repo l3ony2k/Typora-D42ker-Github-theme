@@ -9,6 +9,7 @@
   --select-text-bg-color: #424242 !important;
   --monospace: "Fira Code" !important;
   --window-border: 1px solid #404040;
+  --rawblock-edit-panel-bd: #212121;
 }
 
 ::-webkit-scrollbar-thumb {

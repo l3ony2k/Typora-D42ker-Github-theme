@@ -1,4 +1,4 @@
-# Typora-D42ker-Github-theme
+# Typora-D42ker-GitHub-theme
 A darker `Github Dark` theme for [Typora](https://typora.io/) Markdown Editor.
 
 ## Notes
