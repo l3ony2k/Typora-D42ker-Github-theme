@@ -6,6 +6,7 @@ A darker `Github Dark` theme for [Typora](https://typora.io/) Markdown Editor.
 - Darker & 0 saturation background
 - Red accent color
 - Install [Fira Code](https://github.com/tonsky/FiraCode) to get the best look
+- Better CodeMirror style
 
 ## Screenshots
 
