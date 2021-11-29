@@ -10,6 +10,11 @@
   --monospace: "Fira Code" !important;
   --window-border: 1px solid #404040;
   --rawblock-edit-panel-bd: #212121;
+  --mermaid-theme: dark;
+  --mermaid-font-family: "Fira Code" !important;
+  --mermaid-sequence-numbers: off; /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
+  --mermaid-flowchart-curve: basis /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
+  --mermaid--gantt-left-padding: 100; /* see https://github.com/typora/typora-issues/issues/1665*/
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,7 +68,7 @@ a {
 
 .md-comment {
   color: var(--text-color);
-  opacity: 0.5;
+  opacity: .5;
   font-family: var(--monospace);
 }
 
