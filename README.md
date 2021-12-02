@@ -2,11 +2,12 @@
 A darker `Github Dark` theme for [Typora](https://typora.io/) Markdown Editor.
 
 ## Notes
-- **Only tested on Windows**
-- Darker & 0 saturation background
-- Red accent color
-- Install [Fira Code](https://github.com/tonsky/FiraCode) to get the best look
-- Better CodeMirror style
+- **Designed and tested on Windows** (include styles for Windows `unibody` style). 
+    - Not fully tested, but should work for Linux/macOS.
+- Darker & 0 saturation background.
+- Red accent color.
+- Better CodeMirror style.
+- Install [Fira Code](https://github.com/tonsky/FiraCode) to get the best look.
 
 ## Screenshots
 
@@ -18,8 +19,8 @@ A darker `Github Dark` theme for [Typora](https://typora.io/) Markdown Editor.
 
 ## Install
 
-- Download this repo
-- Open up Typora Theme Folder 
-  - `File` | `Preferences…` | `Appearence` scroll down | `Open Theme Folder`
-- copy and paste the `.css` file in to the Theme Folder
-- select `D42ker Github` to apply
+- Download this repo;
+- Open Typora Theme Folder;
+  - `File` > `Preferences…` > `Appearence` (scroll down) > `Open Theme Folder`.
+- Copy and paste the `.css` file in to the Theme Folder just opened;
+- Select `D42ker Github` to apply.
