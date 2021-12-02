@@ -5,6 +5,7 @@
   --control-text-hover-color: #ddd;
   --item-hover-bg-color: #404040;
   --text-color: #c0c0c0;
+  --blur-text-color: #80808080;
   --bg-color: #121212;
   --select-text-bg-color: #663f3f !important;
   --monospace: "Fira Code" !important;
@@ -13,7 +14,8 @@
   --mermaid-theme: dark;
   --mermaid-font-family: "Fira Code" !important;
   --mermaid-sequence-numbers: off; /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
-  --mermaid-flowchart-curve: basis /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
+  --mermaid-flowchart-curve: basis
+    /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
   --mermaid--gantt-left-padding: 100; /* see https://github.com/typora/typora-issues/issues/1665*/
 }
 
@@ -57,10 +59,10 @@ body {
   background-color: #242424;
 }
 
-table,
+/*table,
 input {
   border: 1px solid #aaa !important;
-}
+}*/
 
 a {
   color: #d86666;
@@ -68,7 +70,7 @@ a {
 
 .md-comment {
   color: var(--text-color);
-  opacity: .5;
+  opacity: 0.5;
   font-family: var(--monospace);
 }
 
@@ -391,11 +393,43 @@ footer.ty-footer {
   border-left-color: rgba(85, 85, 85, 0.12);
 }
 
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) img {
+  opacity: 20%;
+}
+.on-focus-mode .task-list-item:not(.md-focus-container) > input {
+  opacity: 20%;
+}
+.on-focus-mode
+  .md-fences.md-focus
+  .CodeMirror-code
+  > *:not(.CodeMirror-activeline)
+  *,
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
+  color: #80808080 !important;
+}
+.on-focus-mode li[cid]:not(.md-focus-container) {
+  color: #80808080 !important;
+}
+/*.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
+  color: #80808080!important;
+}*/
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+  color: #eee;
+}
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) code,
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) tt {
+  border: 1px solid #212121;
+  background-color: #212121;
+}
+
+/* focus mode end */
+
 header,
 .context-menu,
 .megamenu-content,
 footer {
-  font-family: "Segoe UI", "Arial", sans-serif;
+  font-family: "微软雅黑", "Segoe UI", "Arial", sans-serif;
 }
 
 .megamenu-content {
@@ -572,4 +606,27 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   left: -99999px;
   right: -99999px;
   background: #80808020;
+}
+
+/* unibody */
+
+.megamenu-opened header {
+  background-color: var(--bg-color) !important;
+}
+
+.megamenu-menu {
+  background-color: var(--side-bar-bg-color) !important;
+}
+
+.megamenu-content {
+  background: var(--bg-color) !important;
+}
+
+.long-btn {
+  border: 1px solid #9292928f;
+}
+
+#recent-file-panel-action-btn {
+  background-color: var(--bg-color) !important;
+  border: 1px solid #9292928f !important;
 }
