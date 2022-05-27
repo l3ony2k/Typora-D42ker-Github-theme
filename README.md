@@ -13,9 +13,12 @@ A darker `Github Dark` theme for [Typora](https://typora.io/) Markdown Editor.
 ## Screenshots
 
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/58762081/143670357-80ddaf98-a829-49be-a498-69026ee83081.png" width="32%" />
-  <img src="https://user-images.githubusercontent.com/58762081/143670441-b08f4c65-c911-4541-8cdb-71d413ff6b48.png" width="32%" /> 
-  <img src="https://user-images.githubusercontent.com/58762081/143670480-40ccb3e9-40ff-4280-bf85-4cf82f3bc016.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58762081/170789940-8e85c65f-bf0e-4c47-8c51-0792d136af41.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58762081/170790028-8007b752-4cb8-4e8a-9587-7cf596ef3883.png" width="32%" /> 
+  <img src="https://user-images.githubusercontent.com/58762081/170790158-60ead1d2-255b-4b9c-b1f3-7ccdb5404223.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58762081/170790234-a9dce3e7-79c0-4329-9c10-831dfab33e51.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58762081/170790336-378a31ed-d19e-4082-ae69-42ce9b0bdfe3.png" width="32%" />
+  <img src="https://user-images.githubusercontent.com/58762081/170790427-19d88ad3-1a71-4e67-a8b6-4e9ce0abaafa.png" width="32%" />
 </p>
 
 ## Install
