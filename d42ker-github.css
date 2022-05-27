@@ -8,11 +8,11 @@
   --blur-text-color: #80808080;
   --bg-color: #191919;
   --select-text-bg-color: #663f3f !important;
-  --monospace: "IBM Plex Mono", "Fira Code", monospace !important;
+  --monospace: "IBM Plex Mono", "Fira Code", "微软雅黑", monospace !important;
   --window-border: 1px solid #404040;
   --rawblock-edit-panel-bd: #212121;
   --mermaid-theme: dark;
-  --mermaid-font-family: "IBM Plex Mono", "Fira Code", monospace !important;
+  --mermaid-font-family: "IBM Plex Mono", "Fira Code", "微软雅黑", monospace !important;
   --mermaid-sequence-numbers: off; /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
   --mermaid-flowchart-curve: basis
     /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
@@ -703,5 +703,5 @@ input */{
 }
 
 #top-titlebar {
-  font-family: "Fira Code","微软雅黑",Verdana,sans-serif !important;
+  font-family: var(--monospace);
 }
