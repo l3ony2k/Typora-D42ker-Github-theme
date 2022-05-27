@@ -6,21 +6,25 @@
   --item-hover-bg-color: #404040;
   --text-color: #c0c0c0;
   --blur-text-color: #80808080;
-  --bg-color: #121212;
+  --bg-color: #191919;
   --select-text-bg-color: #663f3f !important;
-  --monospace: "Fira Code" !important;
+  --monospace: "IBM Plex Mono", "Fira Code", monospace !important;
   --window-border: 1px solid #404040;
   --rawblock-edit-panel-bd: #212121;
   --mermaid-theme: dark;
-  --mermaid-font-family: "Fira Code" !important;
+  --mermaid-font-family: "IBM Plex Mono", "Fira Code", monospace !important;
   --mermaid-sequence-numbers: off; /* or "on", see https://mermaid-js.github.io/mermaid/#/sequenceDiagram?id=sequencenumbers*/
   --mermaid-flowchart-curve: basis
     /* or "basis", see https://github.com/typora/typora-issues/issues/1632*/;
   --mermaid--gantt-left-padding: 100; /* see https://github.com/typora/typora-issues/issues/1665*/
+  --heading-char-color: #aaa;
+  --meta-content-color: #6794bc;
+  --primary-color: #d86666;
+  --primary-btn-border-color: #d86666;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #80808080 !important;
+  background: #42424280 !important;
 }
 
 .menu-item-container a.menu-style-btn {
@@ -32,11 +36,12 @@ html {
 }
 
 body {
-  font-family: "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  color: #dddddd;
-  background-color: #121212;
-  line-height: 1.6;
+  color: #d0d0d0;
+  background-color: var(--bg-color);
+  line-height: 1.75;
+  scroll-behavior: smooth;
 }
 
 #typora-quick-open {
@@ -66,6 +71,8 @@ input {
 
 a {
   color: #d86666;
+  text-decoration: none !important;
+  border-bottom: 1px solid #d8666680;
 }
 
 .md-comment {
@@ -152,7 +159,7 @@ ol,
 dl,
 table {
   margin: 0.8em 0;
-  text-align: justify;
+  text-align: left;
 }
 li > ol,
 li > ul {
@@ -185,6 +192,7 @@ ol:last-child {
 }
 blockquote {
   border-left: 4px solid #aaaaaa80;
+  margin-left: 2px;
   padding: 0 15px;
   color: #aaa;
 }
@@ -228,6 +236,11 @@ table tr td:last-child {
   margin-bottom: 0;
 }
 
+strong,
+b {
+  color: #f0f0f0;
+}
+
 .CodeMirror-lines {
   padding-left: 4px;
 }
@@ -241,10 +254,10 @@ table tr td:last-child {
 code,
 tt {
   border: 1px solid #424242;
-  background-color: #424242;
+  background-color: #42424280;
   border-radius: 3px;
   padding: 2px 4px 1px 4px;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 
 .md-fences {
@@ -319,7 +332,7 @@ tt {
 
 .md-tag {
   color: #a7a7a7;
-  opacity: 1;
+  opacity: .5;
 }
 
 .md-toc {
@@ -362,11 +375,24 @@ footer.ty-footer {
 }
 
 .sidebar-content-content {
-  font-family: "微软雅黑" !important;
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif !important;
 }
 
 .outline-content {
   padding: 3px 10px !important;
+  text-align: left !important;
+}
+
+.outline-item.outline-item-active {
+  margin-left: -28px;
+  margin-right: -28px;
+  border-left: 28px solid transparent;
+  border-right: 28px solid transparent;
+  background-color: #424242;
+  background-color: #424242;
+  border-color: #424242;
+  background-color: #424242;
 }
 
 .sidebar-footer {
@@ -380,12 +406,20 @@ footer.ty-footer {
   padding-top: 0px !important;
 }
 
+.file-node-icon {
+  margin-right: 6px;
+}
+
+.file-node-open-state {
+  margin-right: 6px;
+}
+
 .dropdown-menu {
-  background-color: #212121 !important;
+  background-color: #2a2a2a !important;
 }
 
 .dropdown-menu .divider {
-  border-color: #aaaaaa80 !important;
+  border-color: #424242 !important;
 }
 
 /* focus mode */
@@ -415,7 +449,7 @@ footer.ty-footer {
 }*/
 .on-focus-mode .md-focus,
 .on-focus-mode .md-focus-container {
-  color: #eee;
+  color: #d0d0d0;
 }
 .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) code,
 .on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) tt {
@@ -429,7 +463,8 @@ header,
 .context-menu,
 .megamenu-content,
 footer {
-  font-family: "微软雅黑", "Segoe UI", "Arial", sans-serif;
+  font-family: "IBM Plex Sans","Microsoft YaHei", "微软雅黑", "Open Sans", "Clear Sans", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 .megamenu-content {
@@ -444,6 +479,18 @@ footer {
 .file-node-content:hover .file-node-icon,
 .file-node-content:hover .file-node-open-state {
   visibility: visible;
+}
+
+span.file-list-item-file-name-part {
+  color: #f0f0f0;
+}
+
+.file-list-item-summary {
+    height: 3rem;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 16px;
+    opacity: .7 !important;
 }
 
 .mac-seamless-mode #typora-sidebar {
@@ -606,6 +653,17 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
   left: -99999px;
   right: -99999px;
   background: #80808020;
+}
+.cm-s-typora-default .cm-code, .cm-s-typora-default .cm-comment {
+  color: #8997d4;
+  font-family: monospace;
+  font-family: var(--monospace);
+}
+.cm-s-typora-default .cm-string {
+  color: #84a97e;
+}
+.cm-s-typora-default .cm-tag {
+  color: #c36260;
 }
 
 /* unibody */
