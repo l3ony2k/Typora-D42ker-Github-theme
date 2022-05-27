@@ -20,7 +20,6 @@
   --heading-char-color: #aaa;
   --meta-content-color: #6794bc;
   --primary-color: #d86666;
-  --primary-btn-border-color: #d86666;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,7 +68,7 @@ input {
   border: 1px solid #aaa !important;
 }*/
 
-a {
+#write a {
   color: #d86666;
   text-decoration: none !important;
   border-bottom: 1px solid #d8666680;
